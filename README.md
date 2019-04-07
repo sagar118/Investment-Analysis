@@ -15,3 +15,8 @@ Spark Funds has two minor constraints for investments:
   - Country analysis: Identifying the countries which have been the most heavily invested in the past.
   
   - Sector analysis: Understanding the distribution of investments across the eight main sectors. (Note that we are interested in the eight 'main sectors' provided in the mapping file. The two files — companies and rounds2 — have numerous sub-sector names; hence, you will need to map each sub-sector to its main sector.)
+
+There are three dataset:
+  1. Companies: This dataset is provided in the form of a link which contains the data in plain text format. It contains basic data of companies. From this site we need to load the data.
+  2. round2.csv: This contains the funding amount, iinvestment type and many other features related to each company.
+  3. mapping.csv: This file maps the numerous category names in the companies table (such 3D printing, aerospace, agriculture, etc.) to eight broad sector names. The purpose is to simplify the analysis into eight sector buckets, rather than trying to analyse hundreds of them.
